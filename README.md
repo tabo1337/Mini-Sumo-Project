@@ -68,7 +68,7 @@ ring sınırı ise **QTR kenar sensörü** ile yapılır. Maç, kurallara uygun 
 | 1 | **Arduino Nano (ATmega328P)** | 1 | Ana kontrolcü |
 | 2 | **TA6586 Motor Sürücü** | 2 | Çift kanal DC motor sürücü (SW1, SW2) |
 | 3 | **9V 600 RPM Novamax Redüktörlü DC Motor** | 2 | Tahrik motorları (MOT1, MOT2) |
-| 4 | **JSUMO IR Mesafe Sensörü** | 3 | Rakip tespiti (JSUMO1 / JSUMO2 / JSUMO3) |
+| 4 | **JS40F Kızılötesi Mesafe Sensörü** | 3 | Rakip tespiti (JSUMO1 / JSUMO2 / JSUMO3) |
 | 5 | **QTR Kenar (Çizgi) Sensörü** | 1 | Ring beyaz sınır algılama (qtr_1) |
 | 6 | **MEB / Mikro Start Modülü** | 1 | Maç başlatma sinyali (kum) |
 | 7 | **7805 Voltaj Regülatörü** | 1 | 7.5V → 5V lojik besleme |
@@ -83,7 +83,7 @@ ring sınırı ise **QTR kenar sensörü** ile yapılır. Maç, kurallara uygun 
 | 16 | **ON/OFF Anahtar (CONN-SIL3)** | 1 | Güç açma/kapama |
 | 17 | **Sigorta (PULLUP)** | 1 | Aşırı akım koruması |
 | 18 | **Pil / Batarya Paketi** | 1 | 2S LiPo (7.4–7.5V sınıfı) |
-| 19 | **Özel PCB** | 1 | Proteus tasarımı (bu depo) |
+| 19 | **Özel PCB** | 1 | Proteus tasarımı |
 | 20 | Tekerlek + lastik, şasi, vidalar | — | Mekanik montaj |
 
 > ⚠️ **Not:** Mini sumo yönetmeliğine göre robot en fazla **10×10 cm** ve **500 g** olmalıdır.
