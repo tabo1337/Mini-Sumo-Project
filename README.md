@@ -7,7 +7,7 @@
 
 <p align="center">
   <b>Arduino Nano tabanlı, TA6586 sürücülü, JSUMO sensörlü yarışma sınıfı mini sumo robotu</b><br/>
-  <sub>Robofest & Selçuklu Teknosel Teknoloji Festivali'nde yarışmıştır 🏆</sub>
+  <sub>Robofest & Selçuklu Teknosel Teknoloji Festivali'nde yarışmıştır. 🏆</sub>
 </p>
 
 <p align="center">
