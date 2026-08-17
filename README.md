@@ -7,7 +7,7 @@
 
 <p align="center">
   <b>Arduino Nano tabanlı, TA6586 sürücülü, JSUMO sensörlü yarışma sınıfı mini sumo robotu</b><br/>
-  <sub>Robofest & Selçuklu Teknosel Teknoloji Festivali'nde yarışmıştır. 🏆</sub>
+  <sub>Uluslar Arası MEB Robot Yarışması & Karatay Robofest & Selçuklu Teknosel Teknoloji Festivali'nde yarışmıştır. 🏆</sub>
 </p>
 
 <p align="center">
@@ -54,7 +54,7 @@ ring sınırı ise **QTR kenar sensörü** ile yapılır. Maç, kurallara uygun 
 - 👀 **3× JSUMO IR sensör** (sol / orta / sağ) ile geniş açılı rakip tarama
 - 🛑 **QTR kenar sensörü** ile beyaz sınır algılama → ringden düşmeyi önler
 - 🚦 **MEB / Mikro Start modülü** desteği — kurallara uygun maç başlatma
-- 🎛️ **TAKTIK jumper** ile maç öncesi strateji (arama yönü) seçimi
+- 🎛️ **TAKTIK Switch** ile maç öncesi strateji (arama yönü) seçimi
 - 🔘 **Kayıt / mod butonu** ve durum **LED**'leri
 - 🔋 **7805 regülatör + sigorta + ON/OFF anahtar** ile korumalı güç hattı
 - 🖥️ **Proteus** ile tasarlanmış özel PCB
@@ -82,7 +82,7 @@ ring sınırı ise **QTR kenar sensörü** ile yapılır. Maç, kurallara uygun 
 | 15 | **Kumanda Modülü Bağlantısı** | 1 | KUMANDA_MOD (opsiyonel) |
 | 16 | **ON/OFF Anahtar (CONN-SIL3)** | 1 | Güç açma/kapama |
 | 17 | **Sigorta (PULLUP)** | 1 | Aşırı akım koruması |
-| 18 | **Pil / Batarya Paketi** | 1 | 2S LiPo (7.4–7.5V sınıfı) |
+| 18 | **Pil / Batarya Paketi** | 1 | 3S LiPo (12.6V) |
 | 19 | **Özel PCB** | 1 | Proteus tasarımı |
 | 20 | Tekerlek + lastik, şasi, vidalar | — | Mekanik montaj |
 
@@ -98,7 +98,7 @@ ring sınırı ise **QTR kenar sensörü** ile yapılır. Maç, kurallara uygun 
 | ![Şema](images/sema_schematic.png) | ![PCB](images/pcb_layout.png) |
 
 Tasarım **Proteus** ortamında yapılmıştır. Güç hattı: **Pil → Sigorta → ON/OFF → 7805 → 5V lojik**.
-Motorlar doğrudan pil (~7.5V) ile beslenir; kondansatörler (470µF + 1nF) motor gürültüsünü bastırır.
+Motorlar doğrudan pil (~12.6V) ile beslenir; kondansatörler (470µF + 1nF) motor gürültüsünü bastırır.
 
 ---
 
@@ -116,8 +116,8 @@ Motorlar doğrudan pil (~7.5V) ile beslenir; kondansatörler (470µF + 1nF) moto
 | Sağ IR sensör | `JSUMO3` | `A5` |
 | Kenar (QTR) sensör | `qtr_1` | `A0` |
 | Start modülü | `kum` | `D2` |
-| Taktik jumper 1 | `giris1` | `D11` |
-| Taktik jumper 2 | `giris2` | `D12` |
+| Taktik Switch 1 Konumu | `giris1` | `D11` |
+| Taktik Switch 0 Konumu | `giris2` | `D12` |
 | Kayıt/mod butonu | `but_kayit` | `D10` |
 
 ### Motor Sürücü (TA6586)
@@ -155,7 +155,7 @@ Motorlar doğrudan pil (~7.5V) ile beslenir; kondansatörler (470µF + 1nF) moto
 
 - **Kenar önceliklidir:** QTR beyaz sınırı görürse robot her şeyi bırakıp içeri kaçar → ringden düşmeyi engeller.
 - **Rakip bulununca:** en yakın yöne dönüp tam gazla iter.
-- **Rakip yokken:** `TAKTIK` jumper'ına göre sola/sağa tarar veya düz ilerler.
+- **Rakip yokken:** `TAKTIK` Switch'ina göre sola/sağa tarar veya düz ilerler.
 
 ---
 
@@ -177,7 +177,8 @@ Bu robot çeşitli teknoloji festivali ve robot yarışmalarında sahne aldı:
   <img src="images/takim_robofest.jpeg" alt="3. Robofest Konya - Takım" width="70%"/>
 </p>
 
-- 🥇 **3. Robofest Konya** — Karatay Belediyesi
+- 🥉 **Robofest Konya — Türkiye 3.'lüğü** (Karatay Belediyesi)
+- 🎖️ **MEB Robot Yarışması — Çeyrek Final** başarısı
 - 🤖 **Selçuklu Teknosel Teknoloji Festivali** — Konya
 
 ---
