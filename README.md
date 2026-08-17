@@ -27,7 +27,6 @@
 - [Devre Şeması & PCB](#-devre-şeması--pcb)
 - [Pin Bağlantı Tablosu](#-pin-bağlantı-tablosu)
 - [Çalışma Mantığı](#-çalışma-mantığı)
-- [Kurulum & Yükleme](#-kurulum--yükleme)
 - [Kalibrasyon](#-kalibrasyon)
 - [Yarışma Geçmişi](#-yarışma-geçmişi)
 - [Lisans](#-lisans)
@@ -160,21 +159,6 @@ Motorlar doğrudan pil (~7.5V) ile beslenir; kondansatörler (470µF + 1nF) moto
 
 ---
 
-## 🚀 Kurulum & Yükleme
-
-1. **Arduino IDE**'yi kurun (1.8+ veya 2.x).
-2. Bu depoyu klonlayın:
-   ```bash
-   git clone https://github.com/<kullanici-adin>/mini-sumo-robot.git
-   ```
-3. `src/mini_sumo.ino` dosyasını Arduino IDE ile açın.
-4. **Kart:** `Tools → Board → Arduino Nano`
-5. **İşlemci:** `Tools → Processor → ATmega328P` *(eski bootloader ise "Old Bootloader" seçin)*
-6. Doğru **COM portunu** seçip **Upload** edin.
-
-> Farklı pin bağladıysanız `.ino` içindeki **`PIN AYARLARI`** bloğunu güncellemeniz yeterli.
-
----
 
 ## 🎚️ Kalibrasyon
 
