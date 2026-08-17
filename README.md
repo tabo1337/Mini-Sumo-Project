@@ -179,7 +179,7 @@ Bu robot çeşitli teknoloji festivali ve robot yarışmalarında sahne aldı:
 
 - 🥉 **Robofest Konya — Türkiye 3.'lüğü** (Karatay Belediyesi)
 - 🎖️ **MEB Robot Yarışması — Çeyrek Final** başarısı
-- 🤖 **Selçuklu Teknosel Teknoloji Festivali** — Konya
+- 🤖 **Selçuklu Teknosel Teknoloji Festivali Yarı Final** başarısı — Konya
 
 ---
 
